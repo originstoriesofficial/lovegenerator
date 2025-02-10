@@ -66,8 +66,9 @@ Touchdesigner allows for the adaptation and editing of output for different devi
 ### **Step 1: Export API File from ComfyUI**
 
 1. Open **ComfyUI** on your browser
-2. Click **File → Export as API**
-3. Save the file with `.api` extension
+2. Import 
+3. Click **File → Export as API**
+4. Save the file with `.api` extension
 
 ### **Step 2: Setup in TouchDesigner**
 (download Touchdesigner)
