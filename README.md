@@ -60,7 +60,7 @@ This repository contains an automated setup script to deploy **ComfyUI** on a re
 ---
 
 ## ⚙️ API Integration with TouchDesigner
-
+Touchdesigner allows for the adaptation and editing of output for different devices (projectors, TV screens, etc.)
 ### **Step 1: Export API File from ComfyUI**
 
 1. Open **ComfyUI** on your browser
@@ -68,12 +68,15 @@ This repository contains an automated setup script to deploy **ComfyUI** on a re
 3. Save the file with `.api` extension
 
 ### **Step 2: Setup in TouchDesigner**
-
+(download Touchdesigner)
 1. Open a new **TouchDesigner** project
-2. Import **TDComfyUI.tox**
+2. Import **TDComfyUI.tox**. You can download it from here: **https://github.com/olegchomp/TDComfyUI**
 3. Drag and drop the **API file** into the project
 4. Set the **Public IP of ComfyUI** in the settings
 5. Click **Run Streaming**
+
+In case of doubts you can check the [Tutorial video here](https://www.youtube.com/watch?v=62eARh_gRhE&t=360s) 
+
 
 ---
 
