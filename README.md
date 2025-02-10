@@ -37,7 +37,7 @@ This repository contains an automated setup script to deploy **ComfyUI** on a re
 
 1. Download the script from GitHub:
    ```bash
-   wget https://raw.githubusercontent.com/YOUR_USERNAME/ComfyUI-RunPod-Setup/main/setup_comfyui.sh
+   wget https://raw.githubusercontent.com/Volo97/ComfyUI-RunPod-Setup/main/setup_comfyui.sh
    ```
 2. Make the script executable:
    ```bash
