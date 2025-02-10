@@ -66,9 +66,11 @@ Touchdesigner allows for the adaptation and editing of output for different devi
 ### **Step 1: Export API File from ComfyUI**
 
 1. Open **ComfyUI** on your browser
-2. Import 
-3. Click **File → Export as API**
-4. Save the file with `.api` extension
+2. Import [workflow file](https://github.com/Volo97/real-time-comfyui-touchedigner-setup-guide./blob/main/Workflow_ImagetoImage.api.json) 
+(Workflow_ImagetoImage.api.json in Main folder)
+3. Update/download missing nodes automatically with Comfy Manager
+4. Click **File → Export as API**
+5. Save the file with `.api` extension
 
 ### **Step 2: Setup in TouchDesigner**
 (download Touchdesigner)
@@ -78,7 +80,7 @@ Touchdesigner allows for the adaptation and editing of output for different devi
 4. Set the **Public IP of ComfyUI** in the settings
 5. Click **Run Streaming**
 
-In case of doubts you can check the [Tutorial video here](https://www.youtube.com/watch?v=62eARh_gRhE&t=360s) 
+You can check the [Tutorial video here](https://www.youtube.com/watch?v=62eARh_gRhE&t=360s) 
 
 
 ---
