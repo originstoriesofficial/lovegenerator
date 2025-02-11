@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default async function generateImage(prompt: string) {
     const body = {
-        "model_id":"SG161222/RealVisXL_V4.0_Lightning",
+        "model_id":" black-forest-labs/FLUX.1-dev",
         "prompt":prompt,
         "width": 1080,
         "height": 1920
