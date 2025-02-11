@@ -1,0 +1,48 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL") // uses connection pooling
+}
+
+model Route {
+  id        Int        @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean    @default(false)
+  authorId  String?
+  questions Question[]
+  artist    Artist?    @relation(fields: [artistId], references: [id])
+  artistId  Int?
+}
+
+model Artist {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  email     String?  @unique
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @updatedAt @map(name: "updated_at")
+  routes    Route[]
+
+  @@map(name: "routes")
+}
+
+model Question {
+  id      Int      @id @default(autoincrement())
+  text    String
+  route   Route    @relation(fields: [routeId], references: [id])
+  routeId Int      @unique
+  options Option[]
+}
+
+model Option {
+  id         String   @id @default(cuid())
+  text       String
+  isCorrect  Boolean  @default(false)
+  question   Question @relation(fields: [questionId], references: [id])
+  questionId Int
+}
