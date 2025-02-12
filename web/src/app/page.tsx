@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-8 py-16 bg-black min-h-screen">
       <h1 className="text-6xl font-bold mb-24 text-white tracking-tight text-center">
-        NFT Generator
+        THE ORIGIN OF LOVE
       </h1>
       
       {/* Artists Grid */}
@@ -35,49 +35,68 @@ export default function Home() {
       </div>
       
       {/* Centered Dance Floor Section */}
-      <div className="max-w-4xl mx-auto relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-10"></div>
-        <Link href="/dancefloor" className="group block">
-          <div className="relative bg-zinc-950 overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all">
-            {/* Decorative Elements */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-zinc-800 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-zinc-800 to-transparent"></div>
-            
-            <div className="relative z-20">
-              <div className="pt-8 pb-6 px-8 text-center">
-                <h2 className="text-3xl font-medium mb-4 text-white tracking-wider">Enter the Dance Floor</h2>
-                <p className="text-zinc-400 text-lg max-w-2xl mx-auto tracking-wide">
-                  Generate unique art in the metaverse dance floor
-                </p>
-              </div>
-              
-              <div className="relative">
-                <img
-                  src={img}
-                  alt="Dance Floor"
-                  className="w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent mix-blend-multiply"></div>
-                
-                {/* Hover State Button */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-sm">
+<div className="max-w-4xl mx-auto relative">
+  <div className="absolute inset-0 bg-gradient-to-b from-neon-green via-transparent to-neon-green z-10"></div>
+  <Link href="/dancefloor" className="group block">
+    <div className="relative bg-black overflow-hidden border border-neon-green hover:border-neon-green-light transition-all">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neon-green to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neon-green to-transparent"></div>
+      
+      <div className="relative z-20">
+        <div className="pt-8 pb-6 px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-neon-green tracking-widest">Dance Floor VJ</h2>
+          <p className="text-neon-green-light text-lg max-w-2xl mx-auto tracking-wide">
+            Generate unique art in the metaverse dance floor
+          </p>
+        </div>
+        
+        <div className="relative">
+          <img
+            src={img}
+            alt="Dance Floor"
+            className="w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-neon-green/80 to-transparent mix-blend-multiply"></div>
+          
+          {/* Hover State Button */}
+          {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-black rounded-sm">
                     Enter Dance Floor →
                   </span>
-                </div>
-              </div>
-              
-              <div className="py-8 px-8 text-center">
-                <div className="inline-flex items-center space-x-2 text-zinc-500 text-sm">
-                  <span className="w-2 h-2 bg-zinc-500 rounded-full animate-pulse"></span>
-                  <span className="tracking-widest uppercase">Live Generation</span>
-                  <span className="w-2 h-2 bg-zinc-500 rounded-full animate-pulse"></span>
-                </div>
-              </div>
-            </div>
+                </div> */}
+                {/* <div className="flex h-screen w-full items-center justify-center bg-black">
+    
+</div> */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+  {/* <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-black rounded-sm text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-yellow-400 animate-[shine_2s_linear_infinite]">
+    Enter Dance Floor →
+  </span> */}
+  <span
+        className="relative top-0 h-auto justify-center flex bg-gradient-to-r border-neon-green/20 items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+        Enter Dance Floor
+    </span>
+
+</div>
+          {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="px-8 py-4 bg-neon-green/10 backdrop-blur-sm border border-neon-green/20 text-neon-green rounded-sm">
+              Enter Dance Floor →
+            </span>
+          </div> */}
+        </div>
+        
+        <div className="py-8 px-8 text-center">
+          <div className="inline-flex items-center space-x-2 text-neon-green text-sm">
+            <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse"></span>
+            <span className="tracking-widest uppercase">Live Generation</span>
+            <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse"></span>
           </div>
-        </Link>
+        </div>
       </div>
+    </div>
+  </Link>
+</div>
     </main>
   );
 }
+
