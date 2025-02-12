@@ -58,31 +58,13 @@ export default function Home() {
             className="w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-neon-green/80 to-transparent mix-blend-multiply"></div>
-          
-          {/* Hover State Button */}
-          {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-black rounded-sm">
-                    Enter Dance Floor →
-                  </span>
-                </div> */}
-                {/* <div className="flex h-screen w-full items-center justify-center bg-black">
-    
-</div> */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-  {/* <span className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-black rounded-sm text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-yellow-400 animate-[shine_2s_linear_infinite]">
-    Enter Dance Floor →
-  </span> */}
   <span
         className="relative top-0 h-auto justify-center flex bg-gradient-to-r border-neon-green/20 items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
         Enter Dance Floor
     </span>
 
 </div>
-          {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="px-8 py-4 bg-neon-green/10 backdrop-blur-sm border border-neon-green/20 text-neon-green rounded-sm">
-              Enter Dance Floor →
-            </span>
-          </div> */}
         </div>
         
         <div className="py-8 px-8 text-center">
