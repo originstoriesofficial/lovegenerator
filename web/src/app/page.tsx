@@ -3,8 +3,8 @@ import { artists, img } from "@/lib/data";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 bg-black min-h-screen">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 sm:mb-16 md:mb-24 text-white tracking-tight text-center">
+    <main className="container font-vt323 mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 bg-black min-h-screen">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 sm:mb-16 md:mb-24 text-white tracking-tight text-center font-vt323">
         THE ORIGIN OF LOVE
       </h1>
 

@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-vt323 {
+    font-family: var(--font-vt323), sans-serif;
+  }
+}

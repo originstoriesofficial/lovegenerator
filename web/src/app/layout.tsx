@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { VT323 } from "next/font/google";
 import "./globals.css";
 
-// Import fonts properly
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const vt323 = VT323({
+  variable: "--font-vt323",
   subsets: ["latin"],
+  weight: ["400"],
+  style: "normal",
 });
 
 // Metadata for SEO
@@ -24,7 +21,7 @@ export default function RootLayout({
 }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-black text-gray-100`}>
+      <body className={`${vt323.variable} font-vt323 antialiased min-h-screen bg-black text-gray-100`}>
         {children}
       </body>
     </html>
