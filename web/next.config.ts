@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: "90mb",
     },
-    // this has to be there in order to build the project properly
-    serverComponentsExternalPackages: ["@aws-sdk"],
   }
 };
 
