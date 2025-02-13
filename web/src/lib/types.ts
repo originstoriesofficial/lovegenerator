@@ -1,8 +1,14 @@
 export interface Artist {
-    id: number;
-    name: string;
-    image: string;
-    description: string;
+  id: number;
+  title: string;
+  questions: {
+      question: string;
+      options: string[];
+      custom_option: string;
+  }[];
+  ai_prompt_template: string;
+  description?:string;
+  image: string;
   }
   
   export interface Question {

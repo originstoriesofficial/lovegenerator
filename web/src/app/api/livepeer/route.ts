@@ -3,16 +3,16 @@ import axios from 'axios';
 
 export async function POST(req: Request): Promise<Response> {
     try {
-        const { answers }: { answers: string[] } = await req.json();
+        const { answers }: { answers: string } = await req.json();
 
-        if (!answers || answers.length === 0) {
+        if (!answers) {
             return new Response(JSON.stringify({ error: 'Answers are required' }), {
                 status: 400,
                 headers: { 'Content-Type': 'application/json' },
             });
         }
 
-        const prompt = `Generate an artistic image based on these inputs: ${answers.join(', ')}.`;
+        const prompt = answers;
         console.log({ prompt });
 
         const body = {
