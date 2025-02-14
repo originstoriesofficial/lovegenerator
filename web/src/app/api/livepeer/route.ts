@@ -18,8 +18,8 @@ export async function POST(req: Request): Promise<Response> {
         const body = {
             model_id: 'SG161222/RealVisXL_V4.0_Lightning',
             prompt,
-            width: 1080,
-            height: 1920,
+            width: 1920,
+            height: 1080,
         };
 
         console.log('Request Body:', JSON.stringify(body, null, 2));
