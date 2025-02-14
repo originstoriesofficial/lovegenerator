@@ -125,8 +125,6 @@ export default function ArtistPage() {
       const body = {
         userId,
         imageUrl: selectedImage.url,
-        email: userEmail,
-        generationMethod: selectedImage.method,
       };
 
       const response = await fetch("/api/upload-image", {
