@@ -1,13 +1,13 @@
 
 import { Artist, ArtistQuestions } from './types';
 
-export const img: string = "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+export const img: string = "/images/galactic_disco.jpg"
 
 // export const artists: Artist[] = [
-//   { id: 1, name: "CryptoKitty", image: "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill", description: "NFT Art Pioneer" },
-//   { id: 2, name: "BlockchainBob", image: "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill", description: "Pixel Art Master" },
-//   { id: 3, name: "ETHma", image: "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill", description: "Abstract Artist" },
-//   { id: 4, name: "SolanaSage", image: "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill", description: "Digital Surrealist" }
+//   { id: 1, name: "CryptoKitty", image: "/images/galactic_disco.jpg", description: "NFT Art Pioneer" },
+//   { id: 2, name: "BlockchainBob", image: "/images/galactic_disco.jpg", description: "Pixel Art Master" },
+//   { id: 3, name: "ETHma", image: "/images/galactic_disco.jpg", description: "Abstract Artist" },
+//   { id: 4, name: "SolanaSage", image: "/images/galactic_disco.jpg", description: "Digital Surrealist" }
 // ];
 
 export const questions: ArtistQuestions = {
@@ -85,7 +85,8 @@ export const artists: Artist[] = [
       }
     ],
     "ai_prompt_template": "A breathtaking, cinematic still from an 80s Italo Disco-inspired galaxy, where the green glow of pulsar beams, the deep red haze of planetary nebulae, and the black void of space create a hypnotic dreamscape. A surreal celestial dance floor reflects the vibrant neon lights of a colossal mirrorball moon. {scene}. {cosmic_detail}. Bodies clad in futuristic disco attire, outlined in pulsing green and red neon, moving weightlessly through the stardust-filled expanse. {lovers_presence}. A cosmic storm crackles through the sky with electric energy, scattering glowing love letters across the void. 4K, high resolution, award-winning composition.",
-    "image": "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+    "image": "/images/galactic_disco.jpg",
+    "description": "Cosmic 80's Disco Dream",
   },
   {
     "id": 2,
@@ -120,11 +121,13 @@ export const artists: Artist[] = [
       }
     ],
     "ai_prompt_template": "A breathtaking, cinematic still of an Ancient Greek or Egyptian-inspired cosmic love story. A surreal planetary dreamscape bathed in golden, blue, and pink hues. {scene}. {celestial_detail}. Lovers stand in awe, {lovers_presence}. The sky swirls with nebulae shaped like mythological symbols, as divine light illuminates their eternal bond. 4K, high resolution, award-winning composition.",
-    "image": "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+    "image": "/images/celestial_love.jpeg",
+    "description": "Celestial Love of the Gods",
   },
   {
     "id": 3,
     "title": "Aram Mukanay",
+    "description": "All Night Love",
     "questions": [
       {
         "question": "Choose a scene:",
@@ -155,11 +158,12 @@ export const artists: Artist[] = [
       }
     ],
     "ai_prompt_template": "A breathtaking, cinematic still from an 80s Boogie-inspired love story, bathed in deep red, black, and white hues. {scene}. {cinematic_detail}. Lovers stand in the glow of neon reflections, {lovers_presence}. The air hums with the distant echo of a slow-burning love song, as the night pulses with passion and mystery. 4K, high resolution, award-winning composition.",
-    "image": "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+    "image": "/images/all_night_love.jpg"
   },
   {
     "id": 4,
     "title": "Sean Bradford",
+    "description": "Old Hollywood (ROYGBIV)",
     "questions": [
       {
         "question": "Choose a scene:",
@@ -190,11 +194,12 @@ export const artists: Artist[] = [
       }
     ],
     "ai_prompt_template": "A breathtaking, cinematic still from an enchanted Old Hollywood-inspired love story, blending fantasy and classic cinema. {scene}. {surreal_detail}. Lovers stand at the center, {lovers_presence}. A soft, glowing haze wraps around them as the monochrome dreamscape shifts, revealing hidden colors and whispered secrets of a love beyond time. 4K, high resolution, award-winning composition.",
-    "image": "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+    "image": "/images/old_hollywood.jpeg"
   },
   {
     "id": 5,
     "title": "Daiki",
+    "description": "Eternal Love in the Stars",
     "questions": [
       {
         "question": "Choose a scene:",
@@ -225,6 +230,6 @@ export const artists: Artist[] = [
       }
     ],
     "ai_prompt_template": "A breathtaking, cinematic still of a love story set in a cosmic dreamscape, blending pure love, deep night energy, and celestial wonder. {scene}. {celestial_detail}. Lovers stand together, {lovers_presence}. The atmosphere shimmers in hues of green and red, as the universe quietly moves around them, cradling their infinite connection. 4K, high resolution, award-winning composition.",
-    "image": "https://media.cnn.com/api/v1/images/stellar/prod/180302141853-cryptokitties-top.jpg?q=w_2000,c_fill"
+    "image": "/images/eternal_love.jpg"
   }
 ]

@@ -211,3 +211,32 @@ export const generateUploadPresignedUrl = async (
     throw new Error("Error generating presigned URL");
   }
 };
+
+
+export const storeEmailInS3 = async (email: string) => {
+  const fileName = `email-${Date.now()}.txt`; 
+  const emailContent = email;
+  const folderName = 'emails/'; // Store all emails in the 'emails' folder
+
+  // Upload the email to S3 as a text file
+  try {
+    const { publicUrl, url, key } = await s3FileUpload(
+      emailContent,        // email as the body of the file
+      folderName,          // folder name (no user ID, just a general folder)
+      fileName,            // name of the file
+      "text/plain"         // MIME type for a text file
+    );
+
+    console.log("Email successfully uploaded. URL:", publicUrl);
+
+    return {
+      publicUrl,
+      url,
+      key,
+    };
+  } catch (error) {
+    console.error("Error storing email in S3:", error);
+    throw new Error("Failed to store email in S3");
+  }
+};
+

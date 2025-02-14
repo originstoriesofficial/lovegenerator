@@ -163,29 +163,29 @@ export default function ArtistPage() {
             <div className="absolute -bottom-4 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent"></div>
           </div>
         ) : (
-          <div className="space-y-8 sm:space-y-10 md:space-y-12">
-            <div className="relative group max-w-[280px] sm:max-w-[400px] md:max-w-[500px] mx-auto">
-              <img
-                src={generatedImage}
-                alt="Generated Art"
-                className="w-full aspect-[9/16] object-cover rounded-sm"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-
-            <button
-              onClick={handleSubmit}
-              className="w-full p-4 sm:p-5 md:p-6 text-sm sm:text-base bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-sm transition-all text-zinc-300 hover:text-white tracking-wider group relative overflow-hidden"
-            >
-              <span className="relative z-10 flex items-center justify-center space-x-2">
-                <span>Save & Return Home</span>
-                <span className="transform group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </button>
+          <div className="space-y-12">
+          <div className="relative group">
+            <img
+              src={generatedImage}
+              alt="Generated Art"
+              className="w-full aspect-video object-cover rounded-sm"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
+          <button
+            onClick={handleSubmit}
+            className="w-full p-6 bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-sm transition-all text-zinc-300 hover:text-white tracking-wider group relative overflow-hidden"
+          >
+            <span className="relative z-10 flex items-center justify-center space-x-2">
+              <span>Save & Return Home</span>
+              <span className="transform group-hover:translate-x-1 transition-transform">
+                →
+              </span>
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
+        </div>
+        
         )}
       </div>
     </div>

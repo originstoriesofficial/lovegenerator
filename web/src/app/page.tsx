@@ -34,8 +34,8 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Centered Dance Floor Section */}
-      <div className="max-w-[90%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto relative">
+      {/* Centered Choose a Potion Section */}
+      <div className="max-w-[40%] sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto relative">
         <div className="absolute inset-0 bg-gradient-to-b from-neon-green via-transparent to-neon-green z-10"></div>
         <Link href="/dancefloor" className="group block">
           <div className="relative bg-black overflow-hidden border border-neon-green hover:border-neon-green-light transition-all">
@@ -46,23 +46,23 @@ export default function Home() {
             <div className="relative z-20">
               <div className="pt-4 sm:pt-6 md:pt-8 pb-3 sm:pb-4 md:pb-6 px-4 sm:px-6 md:px-8 text-center">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 md:mb-4 text-neon-green tracking-widest">
-                  Dance Floor VJ
+                  Choose a Potion
                 </h2>
                 <p className="text-neon-green-light text-sm sm:text-base md:text-lg max-w-2xl mx-auto tracking-wide">
-                  Generate unique art in the metaverse dance floor
+                  Select your potion for an enchanting experience
                 </p>
               </div>
 
               <div className="relative">
                 <img
                   src={img}
-                  alt="Dance Floor"
+                  alt="Potion Selection"
                   className="w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neon-green/80 to-transparent mix-blend-multiply"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="relative top-0 h-auto justify-center flex bg-gradient-to-r border-neon-green/20 items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent text-center select-auto">
-                    Enter Dance Floor
+                    Enter Potion World
                   </span>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="inline-flex items-center space-x-2 text-neon-green text-xs sm:text-sm">
                   <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-neon-green rounded-full animate-pulse"></span>
                   <span className="tracking-widest uppercase">
-                    Live Generation
+                    Magical Selections Await
                   </span>
                   <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-neon-green rounded-full animate-pulse"></span>
                 </div>
