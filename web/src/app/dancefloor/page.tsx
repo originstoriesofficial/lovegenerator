@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {  useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function PotionPage() {
   const router = useRouter();
@@ -11,7 +11,6 @@ export default function PotionPage() {
   const [loading, setLoading] = useState<boolean>(false);
   const [submitLoading, setSumbitLoading] = useState<boolean>(false);
 
-  // Define the new question with options
   const artistQuestions = [
     {
       question: "Choose Your Love Potion Base",
@@ -35,7 +34,6 @@ export default function PotionPage() {
   ];
 
   const generatePrompt = (answers: string[]) => {
-    // Create the prompt from the selected answers
     return answers.join(", ");
   };
 
@@ -149,18 +147,35 @@ export default function PotionPage() {
           </div>
         ) : (
           <div className="space-y-8 sm:space-y-10 md:space-y-12">
-            <div className="relative group max-w-[280px] sm:max-w-[400px] md:max-w-[500px] mx-auto">
-              <img
-                src={generatedImage}
-                alt="Generated Art"
-                className="w-full aspect-[16/9] object-cover rounded-sm"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative group mx-auto">
+              {/* Mobile-first container with TikTok-like aspect ratio */}
+              <div className="sm:hidden w-full max-w-[400px] mx-auto">
+                <div className="relative pb-[177%]">
+                  <img
+                    src={generatedImage}
+                    alt="Generated Art"
+                    className="absolute inset-0 w-full h-full object-cover rounded-sm"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
+
+              {/* Desktop version with wider aspect ratio */}
+              <div className="hidden sm:block max-w-[600px] md:max-w-[800px] mx-auto">
+                <div className="relative pb-[56.25%]">
+                  <img
+                    src={generatedImage}
+                    alt="Generated Art"
+                    className="absolute inset-0 w-full h-full object-cover rounded-sm"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </div>
             </div>
 
             <button
               onClick={handleSubmit}
-              className="w-full p-4 sm:p-5 md:p-6 text-sm sm:text-base bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-sm transition-all text-zinc-300 hover:text-white tracking-wider group relative overflow-hidden"
+              className="w-full max-w-full mx-auto p-4 sm:p-5 md:p-6 text-sm sm:text-base bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-sm transition-all text-zinc-300 hover:text-white tracking-wider group relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-center space-x-2">
                 <span>Save & Return Home</span>
@@ -177,7 +192,6 @@ export default function PotionPage() {
   );
 }
 
-// Loading states components
 const LoadingState = ({ message }: { message: string }) => (
   <div className="min-h-screen flex flex-col gap-3 sm:gap-4 items-center justify-center bg-black text-white">
     <div className="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full animate-ping"></div>
