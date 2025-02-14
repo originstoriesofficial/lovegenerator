@@ -2,7 +2,6 @@
 "use server";
 import dotenv from "dotenv";
 import AWS from "aws-sdk";
-import fetch from "node-fetch";
 import { Readable } from "stream";
 import {
   S3Client,
@@ -121,18 +120,7 @@ export const s3FileUpload = async (
   bucketName = process.env.AWS_S3_BUCKET!,
   presignedUrl = false
 ) => {
-  let s3Body = body;
-
-  if (typeof body === "string") {
-    try {
-      const response = await fetch(body);
-      if (response.ok) {
-        s3Body = await response.buffer();
-      }
-    } catch (error) {
-      console.error("Error fetch body in s3Upload function:", error);
-    }
-  }
+  const s3Body = body;
 
   const params: AWS.S3.PutObjectRequest = {
     Bucket: bucketName,
@@ -216,15 +204,15 @@ export const generateUploadPresignedUrl = async (
 export const storeEmailInS3 = async (email: string) => {
   const fileName = `email-${Date.now()}.txt`; 
   const emailContent = email;
-  const folderName = 'emails/'; // Store all emails in the 'emails' folder
+  const folderName = 'emails'; // Store all emails in the 'emails' folder
 
   // Upload the email to S3 as a text file
   try {
     const { publicUrl, url, key } = await s3FileUpload(
-      emailContent,        // email as the body of the file
-      folderName,          // folder name (no user ID, just a general folder)
-      fileName,            // name of the file
-      "text/plain"         // MIME type for a text file
+      emailContent,     
+      folderName,         
+      fileName,         
+      "text/plain"         
     );
 
     console.log("Email successfully uploaded. URL:", publicUrl);
